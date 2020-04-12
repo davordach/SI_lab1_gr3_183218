@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 class Item {
 	int id;
 	String name;
@@ -47,6 +49,15 @@ class Item {
 	}
 
 	double taxReturn () {
-		//TODO
+		return price *0.15;
+	}
+}
+
+class Receipt {
+
+	List<Item> itemList;
+
+	public Receipt() {
+	itemList= new ArrayList<Item>();
 	}
 }
